@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tar-link-boundary"
+version = "0.1.0"
+description = "Trace ordered TAR symlink/hardlink boundary hazards without extracting files."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Nripanka Das"}]
+dependencies = []
+
+[project.scripts]
+tar-link-boundary = "tar_link_boundary:main"
+
+[tool.setuptools]
+py-modules = ["tar_link_boundary"]
